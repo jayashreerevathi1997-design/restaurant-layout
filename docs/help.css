@@ -1,0 +1,285 @@
+/* Help Page Styles */
+
+/* Help Header Section */
+.help-header {
+    padding: 40px 80px;
+    background-color: #F5EBDD;
+}
+
+.help-header h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.help-header p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    max-width: 900px;
+}
+
+/* Help Hero Image */
+.help-hero {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.help-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Help Contact Section */
+.help-contact-section {
+    background-color: #d4c4a8;
+    padding: 50px 80px;
+}
+
+.help-contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Left Column - Head Office */
+.help-office .logo {
+    margin-bottom: 30px;
+}
+
+.help-office .logo .book {
+    font-size: 24px;
+    font-weight: 700;
+    color: #B89C65;
+}
+
+.help-office .logo .mytable {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+.help-office .logo small {
+    display: block;
+    font-size: 10px;
+    color: #666;
+    margin-top: 2px;
+}
+
+.help-office h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.help-office .office-name {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.help-office p {
+    font-size: 14px;
+    color: #333;
+    margin: 3px 0;
+}
+
+/* Middle Column - Branch Info */
+.help-branch {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.branch-section {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.branch-section .branch-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.branch-section .branch-icon i {
+    font-size: 24px;
+    color: #333;
+}
+
+.branch-section h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.branch-info p {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.whatsapp-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.whatsapp-info i {
+    font-size: 28px;
+    color: #25D366;
+}
+
+.whatsapp-info span {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Right Column - Contact Persons */
+.help-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-person {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.contact-person .contact-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-person .contact-icon i {
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-person h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-person p {
+    font-size: 14px;
+    color: #333;
+    margin: 3px 0;
+}
+
+.contact-person .phone {
+    font-weight: 500;
+    color: #B89C65;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .help-header {
+        padding: 30px 40px;
+    }
+
+    .help-contact-section {
+        padding: 40px;
+    }
+
+    .help-contact-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .help-office {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .help-header {
+        padding: 30px;
+    }
+
+    .help-header h1 {
+        font-size: 26px;
+    }
+
+    .help-header p {
+        font-size: 14px;
+    }
+
+    .help-hero {
+        height: 200px;
+    }
+
+    .help-contact-section {
+        padding: 30px;
+    }
+
+    .help-contact-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .help-office {
+        text-align: center;
+    }
+
+    .help-office .logo {
+        display: inline-block;
+    }
+
+    .branch-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-person {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .help-header {
+        padding: 20px;
+    }
+
+    .help-header h1 {
+        font-size: 22px;
+    }
+
+    .help-header p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .help-hero {
+        height: 150px;
+    }
+
+    .help-contact-section {
+        padding: 20px;
+    }
+
+    .whatsapp-info {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

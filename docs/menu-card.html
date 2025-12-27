@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Card - Grant Buffet - Book My Table</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reservation.css">
+    <link rel="stylesheet" href="restaurant-detail.css">
+    <link rel="stylesheet" href="menu-card.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <a href="index.html">Home</a>
+        <a href="reservation.html" class="active">Reservation</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="help.html">Help</a>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <span class="book">Book</span><span class="mytable">mytable</span>
+            <small>Never wait for your meal</small>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="header-icons">
+            <a href="#"><i class="fas fa-bell"></i></a>
+            <a href="contact.html"><i class="fas fa-headphones"></i></a>
+            <a href="wishlist.html"><i class="fas fa-heart"></i></a>
+            <div class="user-avatar">
+                <img src="https://i.pravatar.cc/40?img=8" alt="User">
+            </div>
+        </div>
+    </header>
+
+    <!-- Restaurant Hero Section -->
+    <section class="restaurant-hero">
+        <div class="restaurant-hero-image">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800" alt="Grant Buffet">
+        </div>
+        <div class="restaurant-hero-info">
+            <div class="restaurant-hero-header">
+                <h1>Grant Buffet</h1>
+                <button class="favorite-btn"><i class="far fa-heart"></i></button>
+            </div>
+            <p class="restaurant-address">Upper Ground Floor,East court, Phoenix Market City,<br>Viman nagar, Chennai..</p>
+            <hr>
+            <p class="restaurant-cuisine">North Indian,Mohali, Italian,BBQ</p>
+            <p class="restaurant-cost">Cost for two : Rs.1000</p>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <a href="restaurant-detail.html" class="tab">Overview Restaurent</a>
+        <a href="menu-card.html" class="tab active">Menu Card</a>
+    </div>
+
+    <!-- Menu Section -->
+    <section class="menu-section">
+        <h2>Our Menu Card</h2>
+
+        <!-- Menu Categories -->
+        <div class="menu-categories">
+            <button class="category-btn">Starters</button>
+            <button class="category-btn">Main course</button>
+            <button class="category-btn active">Desserts</button>
+            <button class="category-btn">Bevrages</button>
+        </div>
+
+        <!-- Menu Items Grid -->
+        <div class="menu-grid">
+            <!-- Item 1 -->
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=300" alt="Panno Catto">
+                </div>
+                <div class="menu-item-info">
+                    <div class="menu-item-header">
+                        <h3>Panno Catto</h3>
+                        <button class="favorite-btn active"><i class="fas fa-heart"></i></button>
+                    </div>
+                    <p class="menu-item-price"><span class="rupee">₹</span> 240</p>
+                    <button class="add-item-btn">Add Item</button>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=300" alt="Brownie Ice">
+                </div>
+                <div class="menu-item-info">
+                    <div class="menu-item-header">
+                        <h3>Brownie Ice</h3>
+                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <p class="menu-item-price"><span class="rupee">₹</span> 280</p>
+                    <button class="add-item-btn">Add Item</button>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300" alt="Chesse Cake">
+                </div>
+                <div class="menu-item-info">
+                    <div class="menu-item-header">
+                        <h3>Chesse Cake</h3>
+                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <p class="menu-item-price"><span class="rupee">₹</span> 280</p>
+                    <button class="add-item-btn">Add Item</button>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?w=300" alt="Apple Pie">
+                </div>
+                <div class="menu-item-info">
+                    <div class="menu-item-header">
+                        <h3>Apple Pie</h3>
+                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <p class="menu-item-price"><span class="rupee">₹</span> 240</p>
+                    <button class="add-item-btn">Add Item</button>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="https://images.unsplash.com/photo-1666190050371-5fedf54eb3d2?w=300" alt="Gulab Jamun">
+                </div>
+                <div class="menu-item-info">
+                    <div class="menu-item-header">
+                        <h3>Gulab Jamun</h3>
+                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <p class="menu-item-price"><span class="rupee">₹</span> 240</p>
+                    <button class="add-item-btn">Add Item</button>
+                </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?w=300" alt="Creme Bruele">
+                </div>
+                <div class="menu-item-info">
+                    <div class="menu-item-header">
+                        <h3>Creme Bruele</h3>
+                        <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <p class="menu-item-price"><span class="rupee">₹</span> 240</p>
+                    <button class="add-item-btn">Add Item</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <div class="footer-column">
+                <h4>Company</h4>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Customer Reviews</a>
+                <a href="#">Add Your Restaurant</a>
+            </div>
+            <div class="footer-column">
+                <h4>Policy Info</h4>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Cookies Policy</a>
+                <a href="#">Cancellation Policy</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-column">
+                <h4>Cities</h4>
+                <a href="#">Chennai</a>
+                <a href="#">Banglore</a>
+                <a href="#">Hyderabad</a>
+                <a href="#">Mumbai</a>
+            </div>
+            <div class="footer-column">
+                <h4>Help</h4>
+                <a href="#">Booking Status</a>
+                <a href="#">Add Restaurant</a>
+            </div>
+        </div>
+        <div class="footer-cities">
+            <a href="#">Restaurent in Chennai</a>
+            <a href="#">Restaurent in Bangalore</a>
+            <a href="#">Restaurent in Hyderabad</a>
+            <a href="#">Restaurent in Pune</a>
+            <a href="#">Restaurent in Kolkata</a>
+            <a href="#">Restaurent in Mumbai</a>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Book My Table.Co.in. All rights reserved.</p>
+            <div class="footer-contact">
+                <p><i class="fas fa-phone"></i> (123) 8940-985498</p>
+                <p><i class="fas fa-envelope"></i> Info@Bookmytable.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Chennai 54375387</p>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

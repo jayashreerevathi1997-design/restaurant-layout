@@ -1,0 +1,199 @@
+/* Payment Page Styles */
+
+/* Payment Header */
+.payment-header {
+    background-color: #B89C65;
+    padding: 40px 80px;
+    text-align: center;
+}
+
+.payment-header h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+
+/* Payment Content */
+.payment-content {
+    display: flex;
+    min-height: 450px;
+    background-color: #F5EBDD;
+}
+
+.payment-image {
+    flex: 0 0 40%;
+    overflow: hidden;
+}
+
+.payment-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.payment-options {
+    flex: 1;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Dropdown Button */
+.payment-dropdown {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.dropdown-btn {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: border-color 0.3s ease;
+}
+
+.dropdown-btn:hover {
+    border-color: #B89C65;
+}
+
+.dropdown-btn i {
+    font-size: 14px;
+    color: #666;
+    transition: transform 0.3s ease;
+}
+
+.payment-dropdown:hover .dropdown-btn i {
+    transform: rotate(180deg);
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.payment-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #F5EBDD;
+    color: #B89C65;
+}
+
+.dropdown-content a i {
+    font-size: 18px;
+    color: #B89C65;
+    width: 25px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .payment-header {
+        padding: 30px 40px;
+    }
+
+    .payment-header h1 {
+        font-size: 28px;
+    }
+
+    .payment-content {
+        flex-direction: column;
+    }
+
+    .payment-image {
+        flex: none;
+        height: 300px;
+    }
+
+    .payment-options {
+        padding: 40px;
+    }
+
+    .payment-dropdown {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .payment-header {
+        padding: 25px 30px;
+    }
+
+    .payment-header h1 {
+        font-size: 24px;
+    }
+
+    .payment-image {
+        height: 250px;
+    }
+
+    .payment-options {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .payment-header {
+        padding: 20px;
+    }
+
+    .payment-header h1 {
+        font-size: 20px;
+    }
+
+    .payment-image {
+        height: 200px;
+    }
+
+    .payment-options {
+        padding: 20px;
+    }
+
+    .dropdown-btn {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+    .dropdown-content a {
+        padding: 12px 15px;
+        font-size: 13px;
+    }
+}
