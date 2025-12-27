@@ -1,0 +1,622 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F5EBDD;
+    color: #333;
+}
+
+/* Top Navigation */
+.top-nav {
+    background-color: #B89C65;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px 20px;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.top-nav a:hover,
+.top-nav a.active {
+    text-decoration: underline;
+}
+
+/* Header */
+.header {
+    background-color: #F5EBDD;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo .book {
+    font-weight: 700;
+    font-size: 24px;
+    color: #333;
+}
+
+.logo .mytable {
+    font-weight: 400;
+    font-size: 24px;
+    color: #B89C65;
+}
+
+.logo small {
+    font-size: 10px;
+    color: #666;
+}
+
+.search-bar {
+    display: flex;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    flex: 1;
+    max-width: 400px;
+}
+
+.search-bar input {
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    flex: 1;
+    outline: none;
+}
+
+.search-bar button {
+    background: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.register-btn {
+    background-color: #B89C65;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background-color: #a08855;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200') center/cover no-repeat;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+.hero-content h1 {
+    color: #B89C65;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.hero-content p {
+    color: #B89C65;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+/* Explore Section */
+.explore {
+    background-color: #F5EBDD;
+    padding: 40px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.explore h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    color: #333;
+}
+
+.scroll-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.city-cards-scroll {
+    display: flex;
+    gap: 30px;
+    animation: scrollLeft 30s linear infinite;
+    width: fit-content;
+}
+
+.scroll-container:hover .city-cards-scroll {
+    animation-play-state: paused;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.city-card {
+    text-align: left;
+    flex-shrink: 0;
+}
+
+.city-card img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.city-card:hover img {
+    transform: scale(1.05);
+}
+
+.city-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* How It Works */
+.how-it-works {
+    background-color: #F5EBDD;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.step {
+    text-align: center;
+}
+
+.step i {
+    font-size: 40px;
+    color: #B89C65;
+    margin-bottom: 15px;
+}
+
+.step p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Customer Reviews */
+.reviews {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200') center/cover no-repeat;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.reviews h2 {
+    color: #B89C65;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+}
+
+.review-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    background-color: #F5EBDD;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 900px;
+    border-radius: 0;
+}
+
+.review-card {
+    text-align: center;
+    min-width: 150px;
+}
+
+.review-card .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 10px;
+    border: 3px solid #B89C65;
+}
+
+.review-card .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.review-card h4 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.review-card .stars {
+    color: #B89C65;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.review-card p {
+    font-size: 12px;
+    color: #B89C65;
+}
+
+/* Newsletter Section */
+.newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #d4c4a8;
+}
+
+.map-placeholder {
+    flex: 1;
+    min-width: 300px;
+    background: linear-gradient(135deg, #e8dcc8 0%, #d4c4a8 100%);
+    padding: 30px;
+    position: relative;
+}
+
+.map-content {
+    color: #666;
+    font-size: 14px;
+}
+
+.map-content i {
+    color: #d9534f;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    font-size: 12px;
+    margin: 5px 0;
+    color: #0066cc;
+}
+
+.subscribe {
+    flex: 1;
+    min-width: 300px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subscribe-form input {
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    min-width: 200px;
+}
+
+.subscribe-form button {
+    background-color: #B89C65;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.subscribe-form button:hover {
+    background-color: #a08855;
+}
+
+/* Footer */
+.footer {
+    background-color: #B89C65;
+    color: white;
+    padding: 40px 20px 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-column {
+    min-width: 150px;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.footer-column a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-cities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.footer-cities a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-cities a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+    background-color: #333;
+    margin: 20px -20px -20px;
+    padding: 20px 40px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+}
+
+.footer-contact {
+    text-align: right;
+}
+
+.footer-contact p {
+    font-size: 11px;
+    margin: 2px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 0;
+    background-color: #333;
+    margin: 0 -20px -20px;
+}
+
+.social-icons a {
+    color: #B89C65;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    color: #d4c4a8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top-nav {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .top-nav a {
+        font-size: 12px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 15px 20px;
+    }
+
+    .logo {
+        text-align: center;
+        align-items: center;
+    }
+
+    .search-bar {
+        max-width: 100%;
+    }
+
+    .register-btn {
+        width: 100%;
+    }
+
+    .hero {
+        height: 200px;
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 18px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .explore h2 {
+        font-size: 18px;
+    }
+
+    .city-card img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .steps {
+        gap: 30px;
+    }
+
+    .step i {
+        font-size: 30px;
+    }
+
+    .review-cards {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .footer-links {
+        justify-content: flex-start;
+        padding: 0 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-contact {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-nav {
+        gap: 10px;
+        padding: 8px 10px;
+    }
+
+    .top-nav a {
+        font-size: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 14px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+    }
+
+    .explore h2,
+    .how-it-works h2 {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .steps {
+        gap: 20px;
+    }
+
+    .step {
+        flex: 1 1 40%;
+    }
+
+    .reviews h2 {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    .review-card {
+        flex: 1 1 100%;
+    }
+
+    .subscribe h3 {
+        font-size: 16px;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .subscribe-form input,
+    .subscribe-form button {
+        width: 100%;
+    }
+
+    .footer-cities {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
